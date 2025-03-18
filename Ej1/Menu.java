@@ -14,7 +14,7 @@ public class Menu {
         }
     }
 
-    public void capturaOpcion(int opc){
+    public void capturaOpcion(int p){
         System.out.println(menu.get(opc));
     }
    
