@@ -24,6 +24,7 @@ public class GetSimAlm {
         System.out.println("Dime el codigo de ese ariculo: ");
         int codart=entrada.nextInt();
         System.out.println("Dime la descripción de ese articulo: ");
+        System.out.println();
         String descripcion=entrada.nextLine();
         Articulo art1=new Articulo(codart, descripcion);
     }

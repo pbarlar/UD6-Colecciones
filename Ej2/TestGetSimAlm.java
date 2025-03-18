@@ -26,15 +26,15 @@ public class TestGetSimAlm {
         /*Realizo el bucle para ejecutar el menu */
         do {
             menu1.muestraMenu();
-            System.out.println("Dime una opcion del menu (0.6)");
+            System.out.println("Dime una opcion del menu (0-6)");
             opcion=entrada.nextInt();
             switch (opcion) {
                 case 0:
                     alm1.entradaAutomatizada();
+                    System.out.println("Se han añadido 4 articulos automaticamente (art1, art2, art3, art4)");
                     break;
                 case 1:
                     alm1.lista();
-                    break;
                 case 2:
                     alm1.alta();
                     break;
