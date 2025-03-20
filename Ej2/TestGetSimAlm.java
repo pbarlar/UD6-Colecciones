@@ -10,9 +10,9 @@ public class TestGetSimAlm {
         /*Creo objetos del almacen, menu y un par de articulos */
         GetSimAlm alm1=new GetSimAlm();
         Menu menu1=new Menu();
-        Articulo art1=new Articulo(12, "Jarron blanco");
-        Articulo art2=new Articulo(15, "Perchero");
-        Articulo art3=new Articulo(17, "Balon de playa");
+        Articulo art101=new Articulo(12, "Jarron blanco");
+        Articulo art202=new Articulo(15, "Perchero");
+        Articulo art303=new Articulo(17, "Balon de playa");
 
         /*Creo todas las opciones del menu */
         menu1.creaOpcion("0. Entrada automatizada");
@@ -35,6 +35,7 @@ public class TestGetSimAlm {
                     break;
                 case 1:
                     alm1.lista();
+                    break;
                 case 2:
                     alm1.alta();
                     break;

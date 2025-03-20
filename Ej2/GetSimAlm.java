@@ -8,14 +8,18 @@ public class GetSimAlm {
     
     public void entradaAutomatizada(){
         Articulo art1=new Articulo(0, null);
+        articulos.add(art1);
         Articulo art2=new Articulo(0, null);
+        articulos.add(art2);
         Articulo art3=new Articulo(0, null);
+        articulos.add(art3);
         Articulo art4=new Articulo(0, null);
+        articulos.add(art4);
     }
 
     public void lista(){
-        for (Object object : articulos) {
-            System.out.println(object);
+        for (Object i : articulos) {
+            System.out.println(i);
         }
     }
 
@@ -26,7 +30,8 @@ public class GetSimAlm {
         System.out.println("Dime la descripción de ese articulo: ");
         System.out.println();
         String descripcion=entrada.nextLine();
-        Articulo art1=new Articulo(codart, descripcion);
+        Articulo art10=new Articulo(codart, descripcion);
+        articulos.add(art10);
     }
 
     public void baja(Articulo art1){
