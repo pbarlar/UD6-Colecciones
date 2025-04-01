@@ -40,13 +40,13 @@ public class TestGetSimAlm {
                     alm1.alta();
                     break;
                 case 3:
-                    alm1.baja(art1);
+                    alm1.baja(art101);
                     break;
                 case 4:
-                    alm1.entradaMercancia(art1, 12);
+                    alm1.entradaMercancia(art101, 12);
                     break;
                 case 5:
-                    alm1.disminuirMercancia(art1, 6);
+                    alm1.disminuirMercancia(art101, 6);
                     System.out.println("Se ha disminuido la mercancia correctamente");
                 default:
                     break;

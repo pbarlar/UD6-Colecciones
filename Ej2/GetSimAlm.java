@@ -18,14 +18,14 @@ public class GetSimAlm {
     }
 
     public void lista(){
-        for (Object i : articulos) {
-            System.out.println(i);
-        }
+       for (int i = 0; i < articulos.size(); i++) {
+         System.out.println(articulos.get(i));
+       }
     }
 
     public void alta(){
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Dime el codigo de ese ariculo: ");
+        System.out.println("Dime el codigo de ese articulo: ");
         int codart=entrada.nextInt();
         System.out.println("Dime la descripción de ese articulo: ");
         System.out.println();
