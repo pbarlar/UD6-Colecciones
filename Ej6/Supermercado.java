@@ -64,6 +64,9 @@ public class Supermercado {
         } while (!producto.equals("fin"));
 
 
+        
+        //Ahora hago la interfaz del menu con un bucle donde enseño por pantalla los datos de su pedido y el total.
+
         System.out.println("Producto   Precio   Cantidad   Subtotal");
         System.out.println("-------------------------------------------------");
 
