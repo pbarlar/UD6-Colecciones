@@ -9,8 +9,9 @@ public class Supermercado {
         HashMap<String, Double> productos= new HashMap<String, Double>();
         HashMap<String, Integer> listaCompra=new HashMap<>();
         Scanner entrada=new Scanner(System.in);
-        String producto="";
+        String producto=" ";
         int[] cantidad=new int[6];
+        double total=0;
 
         // Añadimos los productos y sus precios
         productos.put("Avena", 2.21);
@@ -55,14 +56,24 @@ public class Supermercado {
                     cantidad[5]+=entrada.nextInt();
                     listaCompra.put("Guisantes", cantidad[5]);
                     break;
-            }  
-        } while (producto!="fin");
+                case "fin":
+                    System.out.println("Saliendo...");
+                    break;
+            } 
+            entrada.nextLine();
+        } while (!producto.equals("fin"));
 
+
+        System.out.println("Producto   Precio   Cantidad   Subtotal");
+        System.out.println("-------------------------------------------------");
 
         for (String i : listaCompra.keySet()) {
             int valor=listaCompra.get(i);
-            System.out.println(i+"-------"+valor);
+            System.out.println(i+"\t"+productos.get(i)+"\t"+valor+"\t"+productos.get(i)*valor);
+            total+=productos.get(i)*valor;
         }
+        System.out.println("------------------");
+        System.out.println("TOTAL: "+total);
 
 
 
