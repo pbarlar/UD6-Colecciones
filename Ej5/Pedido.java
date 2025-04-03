@@ -23,9 +23,12 @@ public class Pedido {
     }
 
     public void mostrarPedido(){
-        System.out.println("Pedido : "+comida);
-        System.out.println("ID-Pedido: "+numPedido);
-        System.out.println("Ingredientes extras: "+ingredientes);
+        if (ingredientes.isEmpty()) {
+            System.out.println("Pedido : "+comida+"\n"+"ID-Pedido: "+numPedido+"\n"+"Ingredientes extras: Ninguno");
+        }else{
+            System.out.println("Pedido : "+comida+"\n"+"ID-Pedido: "+numPedido+"\n"+"Ingredientes extras: "+ingredientes);
+        }
+        
     }
     
     public static int getPedidos(){

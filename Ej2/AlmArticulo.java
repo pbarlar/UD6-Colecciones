@@ -13,7 +13,7 @@ public class AlmArticulo {
     public String toString(){
         String art = "";
         for (Object object : articulos) {
-            art=object+"/n";
+            art=object+"\n";
         }
         return art;
     }
